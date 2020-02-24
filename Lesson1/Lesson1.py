@@ -49,13 +49,14 @@ if my_number < 10:
     max = my_number
 else:
     max = 1
-while my_number >10:
+while my_number >=9:
         new_number= my_number%10
+
         if new_number> max: max =new_number
-        #print(str(max))
+        print(str(new_number))
         my_number = my_number//10
 else:
-        print('самое болшое число: ' + str(max))
+        print('самое большое число: ' + str(max))
 
 print('-----------------------')
 
@@ -82,12 +83,12 @@ print('Введите результат в первый день (А): ')
 a = int(input())
 print('Введите необходимое количество км (В): ')
 b = int(input())
-z=a
+z = a
 den = 1
 while z < b:
-    den = den +1
-    z=z*0.1+z
-    print(str(round(z,2)))
+    den = den + 1
+    z = z * 0.1 + z
+    print(str(round(z, 2)))
 else:
     print('На день: ' + str(den) + ' спортмен достиген резальтат не менее ' + str(b) + ' км.')
 
