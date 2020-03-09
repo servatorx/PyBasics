@@ -7,7 +7,7 @@ try:
     i = 1
     for words_ in strings_list:
         print("Количество слов в строке " + str(i) + ": " + str(len(words_.split())))
-    i += 1
+        i += 1
 
 except IOError:
     print("Произошла ошибка ввода-вывода!")
